@@ -2,9 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+ :root {
   --foreground-rgb: 0, 0, 0;
-}
+} 
 
 @media (prefers-color-scheme: dark) {
   :root {
@@ -15,5 +15,9 @@
 }
 
 body {
-  padding: 1rem;
+  
+}
+
+.MuiButton-root {
+  background-color: #00BD56 !important;
 }

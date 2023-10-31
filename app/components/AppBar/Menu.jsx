@@ -5,7 +5,7 @@ import { Box, Toolbar, IconButton, Typography, Button,  } from "@mui/material";
 import Stack from "@mui/material/Stack";
 
 import { createTheme, ThemeProvider } from "@mui/material/styles";
-import MenuServices from "./MenuServices";
+import MenuServicios from "./MenuServicios";
 
 const navItems = ["Home", "Servicios", "Acerca de", "Contacto"];
 
@@ -14,56 +14,38 @@ const theme = createTheme();
 theme.typography.h6 = {
   fontSize: '20px',
   fontFamily: "'Poppins', sans-serif",
-  fontWeight: 500
+  fontWeight: "bold"
 }
 
 const BoxTheme = () => {
   return (
     <ThemeProvider theme={theme}>
-
-    
     <Box sx={{ display: "flex" }}>
-      <AppBar sx={{ bgcolor: "#fff" }}>
-        <Toolbar sx={{ marginLeft: "3rem", marginRight: "3rem" }}>
+      <AppBar sx={{ bgcolor: "#F2EEEE", boxShadow: 0 }}>
+        <Toolbar sx={{marginLeft: "15rem"}}>
           <Typography
             variant="h6"
-            component="div"
-            sx={{ flexGrow: 1, color: "#00BD56" }}
+            sx={{color: "#00BD56", flexGrow: 1 }}
           >
             Sisket
           </Typography>
-          <Box sx={{ display: "flex" }}>
-            <Stack direction="row" spacing={4}>
+          
+            <Stack direction="row" gap={5} justifyContent="center" alignItems="center">
               <Typography
                 variant="h6"
-                component="div"
-                sx={{ flexGrow: 1, color: "#111" }}
-              >
-                Home
-              </Typography>
-              <Typography
-                variant="h6"
-                component="div"
-                sx={{ flexGrow: 1, color: "#111" }}
+                sx={{ color: "#393E46" }}
               >
                 Acerca de
               </Typography>
               <Typography
                 variant="h6"
-                component="div"
-                sx={{ flexGrow: 1, color: "#000" }}
+                sx={{ color: "#393E46" }}
               >
                 Contacto
               </Typography>
-              <MenuServices />
-              <Button
-                variant="outlined"
-                sx={{ color: '#00BD56', backgroundColor: '#00BD56', borderColor: 'green' }}
-              >
-                Login
-              </Button>
+              <MenuServicios/>
+              <Button variant="contained" sx={{borderRadius: 8, fontFamily: "'Poppins', sans-serif"}}>Login</Button>  
             </Stack>
-          </Box>
         </Toolbar>
       </AppBar>
     </Box>

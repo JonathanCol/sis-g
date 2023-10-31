@@ -1,10 +1,10 @@
 import React from "react";
-import BoxTheme from "./BoxTheme";
+import Menu from "./Menu";
 
 const AppBarMenu = () => {
   return (
     <div>
-      <BoxTheme />
+      <Menu/>
     </div>
   );
 };
