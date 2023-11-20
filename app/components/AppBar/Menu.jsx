@@ -27,7 +27,7 @@ const BoxTheme = () => {
             variant="h6"
             sx={{color: "#00BD56", flexGrow: 1 }}
           >
-            Sisket
+            SIS-G
           </Typography>
           
             <Stack direction="row" gap={5} justifyContent="center" alignItems="center">

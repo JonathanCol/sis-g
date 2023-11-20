@@ -61,7 +61,7 @@ const WelcomeSection = () => {
             ¡Hola!
           </Typography>
           <Typography variant="h1" color={"#111"}>
-            Bienvenido a Sisket
+            Bienvenido a SIS-G
           </Typography>
           <Typography variant="body2" color={"#111"}>
             Lorem ipsum dolor sit amet consectetur. Nisl donec tortor volutpat
