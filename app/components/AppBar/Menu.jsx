@@ -42,12 +42,14 @@ const BoxTheme = () => {
                 Acerca de
               </Typography>
               </Link>
+              <Link href="/contactUs">
               <Typography
                 variant="h6"
                 sx={{ color: "#393E46" }}
               >
                 Contacto
               </Typography>
+              </Link>
               <MenuServicios/>
               <Button variant="contained" sx={{borderRadius: 8, fontFamily: "'Poppins', sans-serif"}}>Login</Button>  
             </Stack>
