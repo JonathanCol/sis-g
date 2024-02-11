@@ -6,6 +6,7 @@ import Stack from "@mui/material/Stack";
 
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import MenuServicios from "./MenuServicios";
+import Link from "next/link";
 
 const navItems = ["Home", "Servicios", "Acerca de", "Contacto"];
 
@@ -27,16 +28,20 @@ const BoxTheme = () => {
             variant="h6"
             sx={{color: "#00BD56", flexGrow: 1 }}
           >
+            <Link href = "/">
             SIS-G
+            </Link>
           </Typography>
           
             <Stack direction="row" gap={5} justifyContent="center" alignItems="center">
+              <Link href="/aboutUs/aboutUs">
               <Typography
                 variant="h6"
                 sx={{ color: "#393E46" }}
               >
                 Acerca de
               </Typography>
+              </Link>
               <Typography
                 variant="h6"
                 sx={{ color: "#393E46" }}

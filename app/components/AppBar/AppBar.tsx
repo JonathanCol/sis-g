@@ -1,12 +1,14 @@
+"use client";
+
 import React from "react";
 import Menu from "./Menu";
 
-const AppBarMenu = () => {
+const AppBar = () => {
   return (
-    <div>
-      <Menu/>
-    </div>
+    <>
+      <Menu />
+    </>
   );
 };
 
-export default AppBarMenu;
+export default AppBar;
