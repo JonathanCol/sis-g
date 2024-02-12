@@ -10,7 +10,7 @@ const StartContentContact = () => {
           display: "flex",
           backgroundColor: "#F2EEEE",
           width: "100%",
-          height: 800,
+          height: 600,
         }}
       >
         <Grid
