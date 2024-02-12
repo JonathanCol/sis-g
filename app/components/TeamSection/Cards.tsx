@@ -1,9 +1,7 @@
 import * as React from "react";
 import Card from "@mui/material/Card";
-import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
-import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import { Box, Grid, createTheme } from "@mui/material";
 import { ThemeProvider } from "@emotion/react";
@@ -34,7 +32,7 @@ export default function Cards() {
       >
         <Grid container direction={"row"} justifyContent="center" alignItems={"center"} rowSpacing={2}>
           
-            <Grid md={2} justifyContent={"center"} alignItems={"center"}>
+            <Grid item md={2} justifyContent={"center"} alignItems={"center"}>
               <Card sx={{ maxWidth: "80%"}}>
                 <CardMedia
                   component="img"
@@ -53,7 +51,7 @@ export default function Cards() {
               </Card>
             </Grid>
 
-            <Grid md={2}>
+            <Grid item md={2}>
               <Card sx={{ maxWidth: "80%" }}>
                 <CardMedia
                   component="img"

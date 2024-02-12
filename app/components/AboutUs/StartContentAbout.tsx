@@ -4,7 +4,7 @@ import { Box, Grid, Typography } from "@mui/material";
 
 
 
-const StartContent = () => {
+const StartContentAbout = () => {
     return (
         <>
         <Box
@@ -13,7 +13,7 @@ const StartContent = () => {
           display: "flex",
           backgroundColor: "#F2EEEE",
           width: "100%",
-          height: 800,
+          height: 600,
         }}
       >
         <Grid
@@ -32,4 +32,4 @@ const StartContent = () => {
     )
 }
 
-export default StartContent;
+export default StartContentAbout;
