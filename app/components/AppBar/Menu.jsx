@@ -1,4 +1,4 @@
-"use client";
+
 import React from "react";
 import AppBar from "@mui/material/AppBar";
 import { Box, Toolbar, IconButton, Typography, Button,  } from "@mui/material";
@@ -34,7 +34,7 @@ const BoxTheme = () => {
           </Typography>
           
             <Stack direction="row" gap={5} justifyContent="center" alignItems="center">
-              <Link href="/aboutUs/aboutUs">
+              <Link href="/AboutUs">
               <Typography
                 variant="h6"
                 sx={{ color: "#393E46" }}

@@ -1,6 +1,4 @@
-
 import StartContentAbout from "../../app/components/AboutUs/StartContentAbout";
-import StartContent from "../../app/components/AboutUs/StartContentAbout";
 import TitleSection from "../../app/components/Body/TitleSection";
 import MisionAndVisionSection from "../../app/components/MisionAndVision/MisionAndVision";
 
@@ -10,22 +8,12 @@ import RootLayout from "../../app/layout";
 
 export default function AboutUs() {
   return (
-      <RootLayout> 
-        <WelcomeSection>
-          <StartContentAbout />
-        </WelcomeSection>
-         <TitleSection />
-        <Cards />
-        <TitleSection />
+    <>
+      <RootLayout>
+       <WelcomeSection>
+        <StartContentAbout/>
+       </WelcomeSection>
       </RootLayout>
-  )
+    </>
+  );
 }
- // <RootLayout>
-      
-        {/* <WelcomeSection>
-          <StartContent />
-        </WelcomeSection> */}
-        {/* <TitleSection />
-        <Cards />
-        <TitleSection /> */}
-      {/* </RootLayout> */}

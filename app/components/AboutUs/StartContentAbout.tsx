@@ -1,8 +1,6 @@
+'use client'
+
 import { Box, Grid, Typography } from "@mui/material";
-
-
-
-
 
 const StartContentAbout = () => {
     return (
