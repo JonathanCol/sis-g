@@ -19,25 +19,15 @@ export default function Cards() {
   return (
     <>
     <ThemeProvider theme={theme}>
-      <Box
-        sx={{
-          mt: 10,
-          mb: 6,
-          display: "flex",
-          backgroundColor: "#FFF",
-          width: "100%",
-          height: 500,
-          justifyContent: "center",
-        }}
-      >
-        <Grid container direction={"row"} justifyContent="center" alignItems={"center"} rowSpacing={2}>
+ 
+        <Grid container direction={"row"} justifyContent="center" alignItems={"center"} spacing={2}>
           
-            <Grid item md={2} justifyContent={"center"} alignItems={"center"}>
-              <Card sx={{ maxWidth: "80%"}}>
+            <Grid item md={2}>
+              
+              <Card >
                 <CardMedia
                   component="img"
                   alt="perfil team"
-                  height="20"
                   image="/fotoPerfilMujer.jpg"
                 />
                 <CardContent sx={{ textAlign: "center"}}>
@@ -49,14 +39,14 @@ export default function Cards() {
                   </Typography>
                 </CardContent>
               </Card>
+   
             </Grid>
 
             <Grid item md={2}>
-              <Card sx={{ maxWidth: "80%" }}>
+              <Card>
                 <CardMedia
                   component="img"
                   alt="perfil team"
-                  height="50"
                   image="/fotoPerfilHombre.jpg"
                 />
                 <CardContent sx={{ textAlign: "center"}}>
@@ -71,9 +61,8 @@ export default function Cards() {
             </Grid>
           </Grid>
        
-      </Box>
+
       </ThemeProvider>
     </>
   );
 }
-
