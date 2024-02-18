@@ -1,7 +1,7 @@
 'use client'
-import StartContentContact from "../app/components/ContacUs/StartContentContact";
-import WelcomeSection from "../app/components/WelcomeSection/WelcomeSection";
-import RootLayout from "../app/layout";
+import StartContentContact from "./StartContentContact";
+import WelcomeSection from "../WelcomeSection/WelcomeSection";
+import RootLayout from "../../layout";
 
 
 
