@@ -11,7 +11,7 @@ const StartContentAbout = () => {
           display: "flex",
           backgroundColor: "#F2EEEE",
           width: "100%",
-          height: 600,
+          height: 600
         }}
       >
         <Grid

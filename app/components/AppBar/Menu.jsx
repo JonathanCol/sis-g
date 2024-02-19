@@ -18,6 +18,7 @@ theme.typography.h6 = {
   fontWeight: "bold"
 }
 
+
 const BoxTheme = () => {
   return (
     <ThemeProvider theme={theme}>
