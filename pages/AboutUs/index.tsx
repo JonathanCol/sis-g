@@ -1,4 +1,5 @@
 import TitleSection from "../../app/components/Body/TitleSection";
+import Footer from "../../app/components/Footer/Footer";
 import StartContent from "../../app/components/StartContent/StartContent";
 import Cards from "../../app/components/TeamSection/Cards";
 import TextImage from "../../app/components/TextAndImage/TextImage";
@@ -16,6 +17,7 @@ export default function AboutUs() {
         <TitleSection />
         <Cards />
         <TextImage />
+        <Footer/>
       </RootLayout>
     </>
   );

@@ -10,7 +10,7 @@ const StartContent = ({text}) => {
         display: "flex",
         backgroundColor: "#F2EEEE",
         width: "100%",
-        height: 600,
+        height: 500,
       }}
     >
       <Grid
