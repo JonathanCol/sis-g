@@ -1,6 +1,5 @@
-import StartContentAbout from "../../app/components/AboutUs/StartContentAbout";
-import TextHistory from "../../app/components/AboutUs/TextHistory";
 import TitleSection from "../../app/components/Body/TitleSection";
+import StartContent from "../../app/components/StartContent/StartContent";
 import Cards from "../../app/components/TeamSection/Cards";
 import TextImage from "../../app/components/TextAndImage/TextImage";
 import WelcomeSection from "../../app/components/WelcomeSection/WelcomeSection";
@@ -10,13 +9,13 @@ export default function AboutUs() {
   return (
     <>
       <RootLayout>
-       <WelcomeSection>
-        <StartContentAbout/>
-       </WelcomeSection>
-       <TextImage />
-       <TitleSection/>
-       <Cards/>
-       <TextImage />
+        <WelcomeSection>
+          <StartContent text={"AboutUs"} />
+        </WelcomeSection>
+        <TextImage />
+        <TitleSection />
+        <Cards />
+        <TextImage />
       </RootLayout>
     </>
   );

@@ -1,23 +1,21 @@
-
 import Footer from "../../app/components/Footer/Footer";
-import FormContact from "../../app/components/FormContact/FormContact";
+import FormSolicitud from "../../app/components/FormSolicitud/FormSolicitud";
 import StartContent from "../../app/components/StartContent/StartContent";
 import WelcomeSection from "../../app/components/WelcomeSection/WelcomeSection";
 import RootLayout from "../../app/layout";
 
 
 
-export default function Home() {
+export default function Solicitud() {
   return (
      <>
      <RootLayout>
       <WelcomeSection>
-        <StartContent text={"ContactUs"} />
+        <StartContent text={"Solicitud"} />
       </WelcomeSection>
-      <FormContact />
+      <FormSolicitud />
       <Footer/>
      </RootLayout>
      </>
   );
 }
-
