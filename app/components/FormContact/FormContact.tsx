@@ -103,15 +103,18 @@ const FormContact = () => {
               variant="outlined"
               fullWidth
               multiline
+              rows={4}
             />
           </Grid>
         </Grid>
         <Box mt={10} mb={10}>
           <Button
             variant="contained"
-            sx={{ borderRadius: 8, fontFamily: "'Poppins', sans-serif" }}
+            sx={{ borderRadius: 8, fontFamily: "'Poppins', sans-serif",fontWeight: "bold"  }}
           >
-            Enviar Mensaje
+            <Typography variant="body2" color={"#111"}>
+            Contáctenos
+          </Typography>
           </Button>
         </Box>
       </Grid>
