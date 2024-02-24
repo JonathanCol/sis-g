@@ -77,7 +77,8 @@ export default function BasicTable() {
             </TableBody>
           </Table>
         </TableContainer>
-        <Box mt={10} mb={10}>
+      </Grid>
+      <Box mt={10} mb={10} alignContent={"center"}>
           <Button
             variant="contained"
             sx={{
@@ -91,7 +92,6 @@ export default function BasicTable() {
             </Typography>
           </Button>
         </Box>
-      </Grid>
     </Grid>
   );
 }
