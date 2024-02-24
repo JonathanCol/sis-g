@@ -2,10 +2,9 @@ import { ThemeProvider } from '@emotion/react'
 import { Box, Button, Grid, Icon, Stack, Typography, createTheme } from '@mui/material'
 import Link from 'next/link';
 import React from 'react'
-import FacebookIcon from '@mui/icons-material/Facebook';
-import InstagramIcon from '@mui/icons-material/Instagram';
-import XIcon from '@mui/icons-material/X';
-import { X } from '@mui/icons-material';
+// import FacebookIcon from '@mui/icons-material/Facebook';
+// import InstagramIcon from '@mui/icons-material/Instagram';
+// import { X } from '@mui/icons-material';
 
 
 const theme = createTheme();
@@ -55,9 +54,9 @@ const Footer = () => (
             </Grid>
             <Grid item md={4}>
            <Stack direction={"row"} gap={5} justifyContent={"center"} alignItems={"center"}>
-           <FacebookIcon />
+           {/* <FacebookIcon />
            <InstagramIcon/>
-           <X/>
+           <X/> */}
            </Stack>
             </Grid>
         </Grid>
