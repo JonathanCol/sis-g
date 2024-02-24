@@ -43,7 +43,7 @@ const BoxTheme = () => {
                 Acerca de
               </Typography>
               </Link>
-              <Link href="/ContactUs">
+              <Link href="/contactUs">
               <Typography
                 variant="h6"
                 sx={{ color: "#393E46" }}
