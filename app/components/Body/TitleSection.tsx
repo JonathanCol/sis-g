@@ -31,7 +31,7 @@ const TitleSection = () => {
           <Grid container justifyContent={"center"} alignItems={"center"}>
             <Grid>
             <Typography gutterBottom variant="h2" component="div">
-          Hola
+          Equipo
             </Typography>
             </Grid>
           </Grid>

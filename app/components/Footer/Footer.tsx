@@ -41,7 +41,7 @@ const Footer = () => (
                 Acerca de
               </Typography>
               </Link>
-              <Link href="/contactUs">
+              <Link href="/ContactUs">
               <Typography
                 variant="h6"
                 sx={{ color: "#393E46" }}

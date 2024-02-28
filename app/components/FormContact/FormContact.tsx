@@ -11,6 +11,8 @@ import {
   } from "@mui/material";
   import Divider from "@mui/material/Divider";
   import React from "react";
+import TitleSection from "../Body/TitleSection";
+import TitleSubTitle from "../TitleAndSubTitle/TitleSubTitle";
   
   const theme = createTheme();
   
@@ -25,6 +27,8 @@ import {
       fontWeight: "bold",
     };
   
+const textBody = ["Contáctenos", "Escribamos para saber más información de esta herramienta completa" ]
+
   const FormContact = () => {
     return (
       <ThemeProvider theme={theme}>
@@ -37,16 +41,7 @@ import {
           mt={10}
           mb={10}
         >
-          <Grid item md={4} alignContent={"center"}>
-            <Typography variant="h3" color={"#111"}>
-              Contáctenos
-            </Typography>
-          </Grid>
-          <Grid item md={4} alignContent={"center"}>
-            <Typography variant="body2" color={"#111"}>
-              Escribamos para saber más información de esta herramienta completa
-            </Typography>
-          </Grid>
+          <TitleSubTitle textArray={textBody} />
           <Grid
             container
             spacing={2}
@@ -123,4 +118,13 @@ import {
   };
   
   export default FormContact;
-  
+  // <Grid item md={4} alignContent={"center"}>
+  //           <Typography variant="h3" color={"#111"}>
+  //             Contáctenos
+  //           </Typography>
+  //         </Grid>
+  //         <Grid item md={4} alignContent={"center"}>
+  //           <Typography variant="body2" color={"#111"}>
+  //             Escribamos para saber más información de esta herramienta completa
+  //           </Typography>
+  //         </Grid>

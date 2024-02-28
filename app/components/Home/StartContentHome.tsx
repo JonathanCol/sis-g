@@ -33,17 +33,18 @@ const StartContentHome = () => {
               ¡Hola!
             </Typography>
             <Typography variant="h1" color={"#111"}>
-              Bienvenido a SIS-G
+              Bienvenido a SIS_G
             </Typography>
             <Typography variant="body2" color={"#111"}>
               Lorem ipsum dolor sit amet consectetur. Nisl donec tortor volutpat
-              id pharetra ultricies mauris. Eget augue at egestas et consequat
-              quis ultricies. At vel aenean posuere neque a fermentum donec eros
-              ut. Nullam mi egestas sed facilisis.
+              id pharetra ultricies mauris.
             </Typography>
+            <Box mt={5}>
             <Button variant="contained" color="primary">
-              Details
+              Sobre Nosotros
             </Button>
+            </Box>
+            
           </Grid>
         </Grid>
       </Box>
