@@ -34,9 +34,7 @@ const TextImage = () => {
             </Typography>
             <Typography variant="body2" color="text.secondary">
             Lorem ipsum dolor sit amet consectetur. Nisl donec tortor volutpat
-              id pharetra ultricies mauris. Eget augue at egestas et consequat
-              quis ultricies. At vel aenean posuere neque a fermentum donec eros
-              ut. Nullam mi egestas sed facilisis.
+              id pharetra ultricies mauris. 
             </Typography>
           </Grid>
           <Grid item md={4}>
