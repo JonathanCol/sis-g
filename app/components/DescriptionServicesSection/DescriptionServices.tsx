@@ -1,10 +1,9 @@
 import { ThemeProvider } from "@emotion/react";
 import { Box, Grid, Icon, SvgIcon, Typography, createTheme } from "@mui/material";
 import React from "react";
-import Image from "next/image";
 import AppRegistrationIcon from '@mui/icons-material/AppRegistration';
 import AssignmentIcon from '@mui/icons-material/Assignment';
-import { green } from "@mui/material/colors";
+
 
 
 
