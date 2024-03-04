@@ -30,7 +30,7 @@ const BoxTheme = () => {
             sx={{color: "#00BD56", flexGrow: 1 }}
           >
             <Link href = "/">
-            SIS-G
+            SIS_G
             </Link>
           </Typography>
           
