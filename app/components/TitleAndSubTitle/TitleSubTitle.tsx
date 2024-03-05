@@ -24,7 +24,7 @@ const TitleSubTitle = ({textArray}) => {
         </Typography>
       </Grid>
       <Grid item md={4} alignContent={"center"}>
-        <Typography variant="body2" color={"#111"}>
+        <Typography variant="body2" color="text.secondary">
           {textArray[1]}
         </Typography>
       </Grid>

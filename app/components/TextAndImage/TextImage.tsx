@@ -8,6 +8,13 @@ import {
 import React from "react";
 import Image from "next/image";
 
+
+interface tiposProps  {
+  text: string[],
+  boxColor: string,
+  sourceImage: string
+
+}
 const theme = createTheme();
 
 theme.typography.h2 = {
@@ -16,10 +23,12 @@ theme.typography.h2 = {
   fontWeight: "bold",
 };
 
-const TextImage = () => {
+
+const TextImage = ({text, boxColor, sourceImage}: tiposProps) => {
   return (
     <>
       <ThemeProvider theme={theme}>
+        <Box sx={{backgroundColor: boxColor}}>
         <Grid
           container
           spacing={2}
@@ -28,19 +37,18 @@ const TextImage = () => {
           direction="row"
           mt={10}
         >
-          <Grid item md={4}>
-            <Typography variant="h2" color={"#111"}>
-            NUESTRA HISTORIA 
+          <Grid item md={2}>
+            <Typography variant="h2" color="black">
+            {text[0]}
             </Typography>
             <Typography variant="body2" color="text.secondary">
-            Lorem ipsum dolor sit amet consectetur. Nisl donec tortor volutpat
-              id pharetra ultricies mauris. 
+           {text[1]}
             </Typography>
           </Grid>
-          <Grid item md={4}>
+          <Grid item md={2}>
             <Box sx={{ display: "flex", flexDirection: "column" }}>
               <Image
-                src="/4356046-removebg-preview.png"
+                src= {sourceImage}
                 width={400}
                 height={400}
                 alt="imagen bienvenida"
@@ -48,6 +56,7 @@ const TextImage = () => {
             </Box>
           </Grid>
         </Grid>
+        </Box>
       </ThemeProvider>
     </>
   );

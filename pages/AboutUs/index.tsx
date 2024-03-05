@@ -6,6 +6,9 @@ import TextImage from "../../app/components/TextAndImage/TextImage";
 import WelcomeSection from "../../app/components/WelcomeSection/WelcomeSection";
 import RootLayout from "../../app/layout";
 
+
+const textQuotation = ["Nuestra Historia", "Somos un equipo que nació de un proyecto para la institucion SENA"];
+const joinTool = ["Maximise el registro de incidencias", "Nuestra herramienta facilitará la solución de inconvenientes en poco tiempo"]
 export default function AboutUs() {
   return (
     <>
@@ -13,10 +16,10 @@ export default function AboutUs() {
         <WelcomeSection>
           <StartContent text={"AboutUs"} />
         </WelcomeSection>
-        <TextImage />
+        <TextImage text={textQuotation} boxColor="#FFFFF" sourceImage="/Equipo.jpg"/>
         <TitleSection />
         <Cards />
-        <TextImage />
+        <TextImage text={joinTool} boxColor="#F2EEEE" sourceImage="/Equipo.jpg"/>
         <Footer/>
       </RootLayout>
     </>

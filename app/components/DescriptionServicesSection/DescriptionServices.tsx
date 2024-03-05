@@ -1,5 +1,5 @@
 import { ThemeProvider } from "@emotion/react";
-import { Box, Grid, Icon, SvgIcon, Typography, createTheme } from "@mui/material";
+import { Box, Divider, Grid, Icon, SvgIcon, Typography, createTheme } from "@mui/material";
 import React from "react";
 import AppRegistrationIcon from '@mui/icons-material/AppRegistration';
 import AssignmentIcon from '@mui/icons-material/Assignment';
@@ -43,6 +43,7 @@ const DescriptionServices = () => {
             </Typography>
           </Grid>
         </Grid>
+        <Divider orientation="vertical" flexItem />
         <Grid item md={2} sx={{ textAlign: "center" }}>
           <Grid
             container
