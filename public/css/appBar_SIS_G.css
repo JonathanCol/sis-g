@@ -1,0 +1,31 @@
+#title_sis_g{
+    color: #00BD56;
+    flex-grow: 1;
+    margin: 1% 5%;
+}
+
+.appBar_sis_g{
+    color: #393E46;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 700;
+}
+
+.appBar_sis_g:hover{
+    color: #00BD56;
+    background-color: transparent;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.item_appBar_sis_g{
+    color: #00BD56 !important;
+}
+
+.button_login_sis_g{
+    color: #00BD56;
+    border: 1px solid #00BD56;
+    background-color: transparent !important;
+    font-family: sans-serif;
+    font-weight: 700;
+}
