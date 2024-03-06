@@ -36,8 +36,8 @@ const StartContentHome = () => {
               Bienvenido a SIS_G
             </Typography>
             <Typography variant="body2" color={"#111"}>
-              Lorem ipsum dolor sit amet consectetur. Nisl donec tortor volutpat
-              id pharetra ultricies mauris.
+              SIS_G es una herramienta de registro de incidencias, en forma de tickets que proporciona a las empresas un fácil uso y 
+              de manera óptima busca organizar los problemas que se presentan en la comunicación con el cliente. 
             </Typography>
             <Box mt={5}>
             <Button variant="contained" color="primary">

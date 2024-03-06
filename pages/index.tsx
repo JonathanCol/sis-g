@@ -17,7 +17,7 @@ export default function Home() {
       </WelcomeSection>
       <TitleSubTitle textArray={arrayText}/>
       <DescriptionServices/>
-      <TextImage text={textQuotation} boxColor="#F2EEEE" sourceImage="/Macbook.jpg"/>
+      <TextImage text={textQuotation} boxColor="#F2EEEE" sourceImage="/images/Macbook.jpg"/>
       <Footer/>
      </RootLayout>
      </>
