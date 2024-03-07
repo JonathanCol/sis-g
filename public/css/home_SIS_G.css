@@ -1,0 +1,10 @@
+#home_box_SIS_G {
+    display: flex;
+    background: #F2EEEE;
+    width: 100%;
+    height: 46rem;
+}
+
+.text-home_SIS_G{
+    margin: 30px 10px;
+}

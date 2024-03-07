@@ -4,6 +4,11 @@
     margin: 1% 5%;
 }
 
+.title_sis_g{
+    font-size: 50px;
+    margin: 2% 5%;
+}
+
 .appBar_sis_g{
     color: #393E46;
     font-size: 20px;
@@ -23,9 +28,20 @@
 }
 
 .button_login_sis_g{
-    color: #00BD56;
-    border: 1px solid #00BD56;
+    color: #00BD56 !important;
+    border: 1px solid #00BD56 !important;
     background-color: transparent !important;
     font-family: sans-serif;
     font-weight: 700;
+}
+
+@media (max-width: 900px) {
+    .button_login_sis_g{
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        bottom: 5%;
+        left: 53%;
+        transform: translate(-50%, 0);
+    }
 }

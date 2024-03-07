@@ -1,9 +1,10 @@
-import { ThemeProvider } from "@emotion/react";
+
 import {
   Box,
   Grid,
   Typography,
   createTheme,
+  ThemeProvider
 } from "@mui/material";
 import React from "react";
 import Image from "next/image";
