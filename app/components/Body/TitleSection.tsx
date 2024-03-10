@@ -12,31 +12,31 @@ theme.typography.h2 = {
 const TitleSection = () => {
   return (
     <>
-    <ThemeProvider theme={theme}>
-      <Box
-        sx={{
-          mt: 6,
-          display: "flex",
-          backgroundColor: "#FFF",
-          width: "100%",
-          height: 200,
-        }}
-      >
-        <Grid
-          container
-          direction={"row"}
-          justifyContent="center"
-          alignItems={"center"}
+      <ThemeProvider theme={theme}>
+        <Box
+          sx={{
+            my: 6,
+            display: "flex",
+            backgroundColor: "#FFF",
+            width: "100%"
+          }}
         >
-          <Grid container justifyContent={"center"} alignItems={"center"}>
-            <Grid>
-            <Typography gutterBottom variant="h2" component="div">
-          Equipo
-            </Typography>
+          <Grid
+            container
+            direction={"row"}
+            justifyContent="center"
+            alignItems={"center"}
+          >
+            <Grid container justifyContent={"center"} alignItems={"center"}>
+              <Grid>
+                <Typography gutterBottom variant="h3" component="div" color={"#00BD56"}
+                  fontWeight={700}>
+                  Equipo
+                </Typography>
+              </Grid>
             </Grid>
           </Grid>
-        </Grid>
-      </Box>
+        </Box>
       </ThemeProvider>
     </>
   );

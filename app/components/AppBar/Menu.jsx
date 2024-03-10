@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Box, Toolbar, IconButton, Typography, Button, AppBar, Stack, Hidden, Drawer, Divider, ListItemIcon,  ListItemButton, useMediaQuery, } from "@mui/material";
-import { createTheme, useTheme, ThemeProvider } from "@mui/material/styles";
+import { useTheme, ThemeProvider } from "@mui/material/styles";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import HomeIcon from "@mui/icons-material/Home";
@@ -11,10 +11,8 @@ import Link from "next/link";
 import "../../../public/css/appBar_SIS_G.css";
 
 const navItems = ["Inicio", "Acerca de", "Contacto", "Servicios"];
-const navLinks = ["", "AboutUs", "ContactUs", "Services"];
+const navLinks = ["/", "/AboutUs", "/ContactUs", "/#servicios_SIS_G"];
 const iconsItems = [HomeIcon, InfoIcon, ContactMailIcon, WorkIcon];
-
-const theme = createTheme();
 
 const BoxTheme = () => {
   const [open, setState] = useState(false);
@@ -72,7 +70,7 @@ const BoxTheme = () => {
                         <ListItemIcon className="item_appBar_sis_g">
                           {React.createElement(iconsItems[index])}
                         </ListItemIcon>
-                        <Link href={`/${navLinks[index]}`}>{item}</Link>
+                        <Link href={`${navLinks[index]}`}>{item}</Link>
                       </ListItemButton>
                     ))}
                   </Box>
@@ -93,7 +91,7 @@ const BoxTheme = () => {
             >
               <Hidden mdDown>
                 {navItems.map((item, key) => (
-                  <Link href={`/${navLinks[key]}`} key={item}>
+                  <Link href={`${navLinks[key]}`} key={item}>
                     <Typography variant="h6" className={`appBar_sis_g`}>
                       {item}
                     </Typography>

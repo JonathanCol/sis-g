@@ -8,8 +8,6 @@ const StartContentHome = () => {
   const isSmallScreen = useMediaQuery(theme.breakpoints.down("md"));
   const isLargeScreen = useMediaQuery(theme.breakpoints.up("lg"));
 
-  console.log(isSmallScreen);
-
   return (
     <>
       <Box id="home_box_SIS_G">
@@ -58,8 +56,13 @@ const StartContentHome = () => {
               comunicación con el cliente.
             </Typography>
             <Box mt={5} mx={1}>
-              <Button variant="contained" color="primary">
-                Comuníquese con nosotros
+              <Button variant="contained" color="primary" href="/ContactUs">
+                <Typography
+                  variant="body2"
+                  color={"#fff"}
+                >
+                  Contáctenos
+                </Typography>
               </Button>
             </Box>
           </Grid>
