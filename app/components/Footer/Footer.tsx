@@ -1,66 +1,71 @@
-import { ThemeProvider } from '@emotion/react'
-import { Box, Button, Grid, Icon, Stack, Typography, createTheme } from '@mui/material'
-import Link from 'next/link';
-import React from 'react'
-import FacebookIcon from '@mui/icons-material/Facebook';
-import InstagramIcon from '@mui/icons-material/Instagram';
-import { X } from '@mui/icons-material';
+import React from "react";
+import { Container, Typography, Link, Grid } from "@mui/material";
+import FacebookIcon from "@mui/icons-material/Facebook";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import { X } from "@mui/icons-material";
+import "../../../public/css/home_SIS_G.css";
 
-
-const theme = createTheme();
-
-theme.typography.h2 = {
-  fontSize: "20px",
-  fontFamily: "'Poppins', sans-serif",
-  fontWeight: "bold",
-}; 
-
-const Footer = () => (
-    <ThemeProvider theme={theme}>
-        <Grid
-            container
-            spacing={2}
-            alignItems="center"
-            justifyContent="center"
-            direction="column"
-            mt={10}
-            mb={10}
-        >
-            <Grid item md={4} alignContent={"center"}>
-                <Typography variant="h2" color={"#111"}>
-                    SIS G
-                </Typography>
-            </Grid>
-            <Grid item md={4} alignContent={"center"}>
-            <Stack direction="row" gap={5} justifyContent="center" alignItems="center">
-              <Link href="/AboutUs">
-              <Typography
-                variant="h6"
-                sx={{ color: "#393E46" }}
-              >
-                Acerca de
-              </Typography>
-              </Link>
-              <Link href="/ContactUs">
-              <Typography
-                variant="h6"
-                sx={{ color: "#393E46" }}
-              >
-                Contacto
-              </Typography>
-              </Link>
-              <Button variant="outlined">Login</Button>  
-            </Stack>
-            </Grid>
-            <Grid item md={4}>
-           <Stack direction={"row"} gap={5} justifyContent={"center"} alignItems={"center"}>
-           <FacebookIcon sx={{color: "#00BD56", mt: 5}}/>
-           <InstagramIcon  sx={{color: "#00BD56", mt: 5}}/>
-           <X  sx={{color: "#00BD56", mt: 5}}/>
-           </Stack>
-            </Grid>
+const Footer = () => {
+  return (
+    <footer className={"footer_SIS_G"}>
+      <Container maxWidth="lg">
+        <Grid container spacing={4} justifyContent="center">
+          <Grid item xs={12} sm={6} md={3}>
+            <Typography variant="h6" gutterBottom>
+              Enlaces
+            </Typography>
+            <Typography>
+              <Link href="#">Inicio</Link>
+            </Typography>
+            <Typography>
+              <Link href="/AboutUs">Nosotros</Link>
+            </Typography>
+            <Typography>
+              <Link href="/ContactUs">Contacto</Link>
+            </Typography>
+            <Typography>
+              <Link href="#servicios_SIS_G">Servicios</Link>
+            </Typography>
+          </Grid>
+          <Grid item xs={12} sm={6} md={3}>
+            <Typography variant="h6" gutterBottom>
+              Redes Sociales
+            </Typography>
+            <Typography>
+              <FacebookIcon sx={{ color: "#00BD56" }} />
+              <Link href="#">Facebook</Link>
+            </Typography>
+            <Typography>
+              <X sx={{ color: "#00BD56" }} />
+              <Link href="#">Twitter</Link>
+            </Typography>
+            <Typography>
+              <InstagramIcon sx={{ color: "#00BD56" }} />
+              <Link href="#">Instagram</Link>
+            </Typography>
+          </Grid>
+          <Grid item xs={12} sm={6} md={3}>
+            <Typography variant="h6" gutterBottom>
+              Información de contacto
+            </Typography>
+            <Typography>Dirección: 123 Calle Principal, Ciudad</Typography>
+            <Typography>Teléfono: +123456789</Typography>
+            <Typography>Email: info@example.com</Typography>
+          </Grid>
         </Grid>
-    </ThemeProvider>
-)
+        <Typography
+          variant="body2"
+          align="center"
+          color="inherit"
+          gutterBottom
+          my={5}
+        >
+          © {new Date().getFullYear()} Nombre de tu empresa. Todos los derechos
+          reservados.
+        </Typography>
+      </Container>
+    </footer>
+  );
+};
 
-export default Footer
+export default Footer;

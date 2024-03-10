@@ -16,11 +16,10 @@ export default function AboutUs() {
         <WelcomeSection>
           <StartContent text={"AboutUs"} />
         </WelcomeSection>
-        <TextImage text={textQuotation} boxColor="#FFFFF" sourceImage="/Equipo.jpg"/>
+        <TextImage text={textQuotation} boxColor="#FFFFF" sourceImage="/images/Equipo.jpg"/>
         <TitleSection />
         <Cards />
-        <TextImage text={joinTool} boxColor="#F2EEEE" sourceImage="/Equipo.jpg"/>
-        <Footer/>
+        <TextImage text={joinTool} boxColor="#F2EEEE" sourceImage="/images/Equipo.jpg"/>
       </RootLayout>
     </>
   );

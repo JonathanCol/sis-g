@@ -8,3 +8,45 @@
 .text-home_SIS_G{
     margin: 30px 10px;
 }
+
+.footer_SIS_G {
+    margin-top: auto;
+    padding: 32px;
+}
+
+.footer_SIS_G a {
+    color: #393E46;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer_SIS_G .MuiButton-root, 
+.footer_SIS_G .MuiSvgIcon-root,
+.footer_SIS_G a:hover {
+    color: #00BD56;
+}
+
+.footer_SIS_G .grid-item {
+    text-align: center;
+}
+
+.footer_SIS_G .grid-item h6 {
+    margin-bottom: 16px;
+}
+
+@media only screen and (min-width: 600px) {
+    .footer_SIS_G .css-10voxkt-MuiGrid-root {
+        width: 33.33%;
+        max-width: 33.33%;
+    }
+}
+
+@media only screen and (max-width: 599px) {
+    .footer_SIS_G .grid-item {
+        width: 100%;
+    }
+
+    .footer_SIS_G .grid-item:not(:last-child) {
+        margin-bottom: 16px;
+    }
+}

@@ -19,28 +19,26 @@ theme.typography.h5 = {
 export default function Cards() {
   return (
     <>
-    <ThemeProvider theme={theme}>
- 
-        <Grid container direction={"row"} justifyContent="center" alignItems={"center"} spacing={2}>
-          
+      <ThemeProvider theme={theme}>
+        <Box mb={10}>
+          <Grid container direction={"row"} justifyContent="center" alignItems={"center"} spacing={2}>
             <Grid item md={2}>
-              
               <Card >
                 <CardMedia
                   component="img"
                   alt="perfil team"
-                  image="/fotoPerfilMujer.jpg"
+                  image="/images/fotoPerfilMujer.jpg"
                 />
-                <CardContent sx={{ textAlign: "center"}}>
+                <CardContent sx={{ textAlign: "center" }}>
                   <Typography gutterBottom variant="h5" component="div">
                     Maritza Garcia Sanchez
                   </Typography>
                   <Typography variant="body2" color="text.secondary">
-                   Front end Developer
+                    Front end Developer
                   </Typography>
                 </CardContent>
               </Card>
-   
+
             </Grid>
 
             <Grid item md={2}>
@@ -48,9 +46,9 @@ export default function Cards() {
                 <CardMedia
                   component="img"
                   alt="perfil team"
-                  image="/fotoPerfilHombre.jpg"
+                  image="/images/fotoPerfilHombre.jpg"
                 />
-                <CardContent sx={{ textAlign: "center"}}>
+                <CardContent sx={{ textAlign: "center" }}>
                   <Typography gutterBottom variant="h5" component="div">
                     Jonathan Cediel Perdomo
                   </Typography>
@@ -61,8 +59,7 @@ export default function Cards() {
               </Card>
             </Grid>
           </Grid>
-       
-
+        </Box>
       </ThemeProvider>
     </>
   );
